@@ -1,5 +1,8 @@
 # Trojan client with control commands [简体中文](./README.md) | English
-## Download [Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases) Here! <br> Notices: Do not copy the following code and error will be reported. JSON files are not supported to comment.
+Download [Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases) Here! If there are any issue, please contact to me. 
+
+**Notices: Do not copy the following code and error will be reported. JSON files are not supported to comment.**
+
 # Trojan Server Configuration 
 
 The official document has enough details, you can refer from it:
@@ -108,9 +111,11 @@ Copy to local trojan client folder and overwrite original one if exists.
 ```
 Save changing after editing!!!
 
-## start and stop command
+## Control commands (start and stop)
 
-Download release files, thay are designed for MacOS and Windows with control commands, also delete the useless files in offical releases.
+The details can visit master branch of this [project](https://github.com/YHPeter/Trojan-gfw-configuration)
+
+Download [Release files](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases), thay are designed for MacOS and Windows with control commands, also delete the useless files in offical releases.
 
 # Trojan Server Common Commands
 
