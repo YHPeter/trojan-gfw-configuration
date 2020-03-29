@@ -108,7 +108,7 @@ OUTPUT:
 
 ## start&stop文件
 
-下载我的release文件，为 MacOS 和 Windows 写入了start和stop文件，并精简了官方release
+下载本项目的release文件，为 MacOS 和 Windows 写入了start 和 stop 文件，并精简了官方release
 
 # Trojan 服务器端常用命令
 
