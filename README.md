@@ -1,7 +1,9 @@
+
+# Trojan客户端 集合运行和终止命令 简体中文 | [English](./README_EN.md)
+## 下载[Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases) 不要复制下面的代码会报错，json文件是不能注释
 # Trojan服务器端
 
-官方文档比较详细，直接参考官网
-https://github.com/trojan-gfw/trojan/
+官方文档比较详细，直接参考官网: https://github.com/trojan-gfw/trojan/
 
 https://github.com/trojan-gfw/trojan/wiki/Binary-&-Package-Distributions
 
@@ -13,7 +15,7 @@ https://github.com/trojan-gfw/trojan/wiki/Binary-&-Package-Distributions
 
 在服务器端输入```systemctl status trojan```获取 server.conf 或 json 文件
 
- ```
+```
 OUTPUT:
 Main PID: xxxx (trojan)
   CGroup: /system.slice/trojan.service
