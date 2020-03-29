@@ -1,6 +1,6 @@
 
 # Trojan客户端 集合运行和终止命令 简体中文 | [English](./README_EN.md)
-## 下载[Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases) 不要复制下面的代码会报错，json文件是不能注释
+下载[Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases) **不要复制下面的代码会报错，json文件是不能注释!** 如果有任何不对的地方，请及时联系我改正！！！
 # Trojan服务器端
 
 官方文档比较详细，直接参考官网: https://github.com/trojan-gfw/trojan/
@@ -110,9 +110,9 @@ OUTPUT:
 ```
 修改完后保存
 
-## start&stop文件
+## 控制文件 （运行、停止）
 
-下载本项目的release文件，为 MacOS 和 Windows 写入了start 和 stop 文件，并精简了官方release
+下载本项目的[Release](https://github.com/YHPeter/Trojan-gfw-configuration-explanation/releases)文件，为 MacOS 和 Windows 客户端写入了start 和 stop 文件，并精简了官方release
 
 # Trojan 服务器端常用命令
 
