@@ -55,6 +55,8 @@ Main PID: xxxx (trojan)
 
 ## 证书文件
 
+**客户端只需要证书文件（pem,cer等），不需要key**
+
 1. 本地没有证书文件
 
 在服务器端输入```systemctl status trojan```获取 server.conf 或 json 文件
@@ -99,7 +101,7 @@ OUTPUT:
     "ssl": {
         "verify": true,
         "verify_hostname": true,
-        "cert": "fullchain.cer",//上一步
+        "cert": "fullchain.cer",//上一步证书的名字
         
     //后面都不需要变
 }
@@ -112,11 +114,11 @@ OUTPUT:
 
 # Trojan 服务器端常用命令
 
-``` systemctl restart trojan ``` 重启trojan
-``` systemctl stop trojan ``` 停止trojan
-``` systemctl start trojan ``` 运行torjan
-``` systemctl status trojan ``` 查看当前trojan状态
-``` systemctl status trojan -l ``` 查看当前trojan完整状态
-``` cat /usr/src/trojan/server.conf ``` 查看trojan配置
+``` systemctl restart trojan ``` 重启trojan <br>
+``` systemctl stop trojan ``` 停止trojan <br>
+``` systemctl start trojan ``` 运行torjan <br>
+``` systemctl status trojan ``` 查看当前trojan状态 <br>
+``` systemctl status trojan -l ``` 查看当前trojan完整状态 <br>
+``` cat /usr/src/trojan/server.conf ``` 查看trojan配置 <br>
 
 **希望大家可以star，更让更多人了解真正的trojan配置，而不是使用一键脚本**
