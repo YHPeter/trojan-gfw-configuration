@@ -123,4 +123,4 @@ OUTPUT:
 ``` systemctl status trojan -l ``` 查看当前trojan完整状态 <br>
 ``` cat /usr/src/trojan/server.conf ``` 查看trojan配置 <br>
 
-**希望大家可以star，更让更多人了解真正的trojan配置，而不是使用一键脚本**
+**希望大家可以star，让更多人真正了解的trojan配置，而不是使用一键脚本**
