@@ -7,9 +7,40 @@
 
 https://github.com/trojan-gfw/trojan/wiki/Binary-&-Package-Distributions
 
-或使用网上一件脚本（找不到可以联系我推荐）
+或使用网上一键脚本（找不到可以联系我推荐）
 
 ## 配置文件讲解
+
+### Trojan Service 写入
+
+```
+nano /etc/systemd/system/trojan.service
+or
+vim /etc/systemd/system/trojan.service
+```
+复制粘贴如下代码到文件中：
+```
+[Unit]
+Description=trojan  
+After=network.target  
+   
+[Service]
+Type=simple  
+ExecStart=/usr/local/bin/trojan -c "/usr/local/etc/trojan/config.json"  
+ExecReload=  
+ExecStop=/usr/local/bin/trojan
+PrivateTmp=true  
+   
+[Install]  
+WantedBy=multi-user.target
+```
+
+记得根据trojan程序和配置文件的位置修改一下字段，其中```/usr/local/bin/trojan``` 是trojan程序的位置，```/usr/local/etc/trojan/config.json``` 是trojan配置的位置。
+
+```
+ExecStart=/usr/local/bin/trojan -c /usr/local/etc/trojan/config.json
+ExecStop=/usr/local/bin/trojan
+```
 
 **用ssh连接服务器，配置trojan服务器端**
 
@@ -24,8 +55,12 @@ Main PID: xxxx (trojan)
 
 /usr/src/trojan/server.conf 是配置文件地址
 
-```nano /usr/src/trojan/server.conf ```修改配置
-
+```bash
+nano /usr/src/trojan/server.conf
+or
+vim /usr/src/trojan/server.conf
+```
+修改配置
 ```
 {
     "run_type": "server",

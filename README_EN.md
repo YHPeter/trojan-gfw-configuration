@@ -15,6 +15,35 @@ Or searching for the all-in-one command.
 
 ## Configuration
 
+### Write Trojan Service
+
+```
+nano /etc/systemd/system/trojan.service
+or
+vim /etc/systemd/system/trojan.service
+```
+Paste the following code into the text editor with some change: 
+```
+[Unit]
+Description=trojan  
+After=network.target  
+   
+[Service]
+Type=simple  
+ExecStart=/usr/local/bin/trojan -c "/usr/local/etc/trojan/config.json"  
+ExecReload=  
+ExecStop=/usr/local/bin/trojan
+PrivateTmp=true  
+   
+[Install]  
+WantedBy=multi-user.target
+```
+Need to change part of the content, ```/usr/local/bin/trojan``` is the adress of trojan application, ```/usr/local/etc/trojan/config.json``` is the adress of configuation of trojan.
+```
+ExecStart=/usr/local/bin/trojan -c /usr/local/etc/trojan/config.json
+ExecStop=/usr/local/bin/trojan
+```
+
 **Connect your server by ssh to edit trojan program file**
 
 SSH INPUT: ```systemctl status trojan``` Find server.conf or json file
